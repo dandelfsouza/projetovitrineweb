@@ -1,0 +1,162 @@
+main{ /* Define as caracteristicas do alocador de Conteudo */
+	
+	background-color: #000;
+	width: 100%;
+	min-height: 600px;
+	float: left;
+	margin-top: 57px;
+}
+
+main >article:nth-of-type(1){ /* Define as caracteristicas do Primeiro Quadro de Imagens */
+	
+	background-color: #aaa;
+	height: 600px;
+	width: 100%;
+	float: left;
+	position: relative;
+    background-image: url("../img/york.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: 100%;
+	border-bottom: 2px solid #fCA311;
+		
+}
+
+main >article:nth-of-type(1) div { /* Define as caracteristicas da Div de Conteúdo do Primeiro Quadros de Imagens */
+	
+	margin-top: 20px;
+	
+}
+
+main >article:nth-of-type(2){ /* Define as caracteristicas do Segundo Quadro de Imagens */
+	
+	background-color: #bbb;
+	height: 600px;
+	width: 100%;
+	float: left;
+	position: relative;
+	background-image: url("../img/city.jpg");
+    background-repeat: no-repeat;
+	background-size: 100%;
+	border-bottom: 2px solid #fCA311;
+	
+}
+
+main >article:nth-of-type(3){ /* Define as caracteristicas do Terceiro Quadro de Imagens */
+	
+	background-color: #ccc;
+	height: 600px;
+	width: 100%;
+	float: left;
+	position: relative;
+	background-image: url("../img/austr.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: 100%;
+	border-bottom: 2px solid #fCA311;
+	
+}
+
+main >article:nth-of-type(4){ /* Define as caracteristicas do Quarto Quadro de Imagens */
+	
+	background-color: #555;
+	height: 600px;
+	width: 100%;
+	float: left;
+	position: relative;
+	background-image: url("../img/beach.jpg");
+    background-repeat: no-repeat;
+	background-size: 100%;
+	border-bottom: 2px solid #fCA311;
+	
+}
+
+main >article:nth-of-type(5){ /* Define as caracteristicas do Terceiro Quadro de Imagens */
+	
+	background-color: #ccc;
+	height: 600px;
+	width: 100%;
+	float: left;
+	position: relative;
+	background-image: url("../img/black.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: 100%;
+	border-bottom: 2px solid #fCA311;
+	
+}
+
+main >article:nth-of-type(6){ /* Define as caracteristicas do Terceiro Quadro de Imagens */
+	
+	background-color: #ccc;
+	height: 600px;
+	width: 100%;
+	float: left;
+	position: relative;
+	background-image: url("../img/highway.jpg");
+    background-repeat: no-repeat;
+	background-size: 100%;
+	
+}
+
+main >article div{ /* Define as caracteristicas da Div de Conteúdo dos Quadros de Imagens */
+	
+	width: 1309px;
+	height: 560px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	
+}
+
+main >article p{ /* Define as caracteristicas dos Textos dos Quadros de Imagens */
+	
+	
+}
+
+main >article h1{ /* Define as caracteristicas dos Titulos dos Quadros de Imagens */
+
+	font-family: fontSinkinSans;
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+	padding-top: 100px;
+	
+}
+
+main >article div>div{
+	
+	width: 1309px;
+	height: 560px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+main article form{
+	
+	text-align: center;
+	margin-top: 100px;
+	
+}
+
+main article input{
+	
+	text-align: center;
+	width: 200px;
+	height: 60px;
+	color: #fff;
+	background-color: #14213d;
+	cursor: pointer;
+	font-family: fontSinkinSans;
+	border: 2px solid #fCA311;
+	
+}
+
+main article input:hover{
+	
+	background-color: #fca311;
+	transition: 0.8s;
+	width: 400px;
+	
+}

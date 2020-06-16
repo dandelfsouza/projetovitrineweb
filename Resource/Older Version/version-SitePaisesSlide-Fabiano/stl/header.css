@@ -1,0 +1,74 @@
+header { /* Define o tamanho do Header */
+	
+	width: 100%;
+	background-color: #000;	
+	margin-top: 75px;
+	position: fixed;
+	float: left;
+	z-index: 1000;
+	margin-top: 0px;
+    border-bottom: 2px solid #fCA311;
+	font-family: fontSinkinSans;
+	
+}
+
+header li{ /* Define as caracteristicas dos Textos */
+	
+	float: left;
+	background-color: #14313d;
+	text-align: center;
+    width: 125px;
+    padding-top: 15px;
+	padding-bottom: 15px;
+    cursor: pointer;
+	
+}
+
+header a{ /* Define as caracteristicas dos Links */
+	
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+    margin-top: 31px;	
+	
+}
+
+header div{ /* Define as caracteristicas da Div Centralizadora */
+	
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 1349px;
+	
+}
+
+header li >div{ /* Define as caracteristicas da Div do Menu Secundário */
+    
+    width: 21px;
+    height: 21px;
+	
+   
+}
+
+header li:last-child{ /* Define as caracteristicas do Menu Secundário */
+    
+    width: 60px;
+    height: 25px;
+	float: right;
+	background-color: #14313d;
+    
+    
+}
+
+header a:hover{ /* Define a caracteristica da Cor do Link */
+	
+	color: #fff;
+	transition: 0.8s;
+
+}
+
+header li:hover{ /* Define as caracteristicas do Fundos das Listas do Menu */
+    
+    background-color: #fCA311;
+    transition: 0.8s;
+}

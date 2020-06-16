@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="index">
+  
+	<head>
+
+		<title>Vitrine</title>
+    
+		<meta charset="UTF-8">
+        
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Replace replace replace replace 
+			replace replace replace replace replace">    
+
+		<link rel="stylesheet" type="text/css" href="css/library/minified.css">
+		<link rel="stylesheet" type="text/css" href="css/cadastro.css">
+        
+        <script type='text/javascript' src="/js/jquery.min.js"></script>
+		<script type='text/javascript' src="/js/anc.js"></script>
+        
+		<link rel="shortcut icon" href="file/image/icon.png">
+		
+		<style>
+			
+
+			
+		</style>		
+		
+	</head>  
+	<body> 
+        
+		<header id="topo">
+        
+            <nav>
+                <ul class="no-list-style background-d">
+                    <li><a href="index.html" class="heading heading-6 background-c scroll">Vitrine</a></li>
+                    <li></li>
+                    <li><a href="cadastro.html" class="heading">Cadastro</a></li>
+                    
+                    <li><a class="heading"><button class="heading login" onclick="openForm()">Login</button></a>
+                    
+                        <div class="form-popup" id="myForm">
+                            
+                              <form action="/action_page.php" class="form-container">
+                                  
+                                <span class="heading heading-6 color-black"> Login </span>
+
+                                <input type="text" placeholder="Digite seu E-mail" name="email" required>
+                                  
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                <button type="submit" class="btn">Login</button>
+                                  
+                                <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+                                  
+                              </form>
+                            
+                        </div>
+
+                            <script>
+                                
+                                function openForm() {
+                                  document.getElementById("myForm").style.display = "block";
+                                }
+
+                                function closeForm() {
+                                  document.getElementById("myForm").style.display = "none";
+                                }
+                                
+                            </script>
+                        
+                    </li>
+                </ul>
+            </nav>
+            
+		</header>
+        
+		<main>
+           
+			<article class="pScreen">
+            
+                <span class="heading heading-1 color-black">Cadastre-se!</span>
+                <span class="heading heading-4 color-black">E confira nossas avaliações</span>
+                
+                <form action="#">
+                    
+                    <div>
+                    
+                        <input class="background-d" type="text" placeholder="Nome" required>
+                        <input class="background-d" type="email" placeholder="E-mail" required>
+                        <input class="background-d" type="password" placeholder="Senha" required>
+                        
+                        <input class="background-c" type="submit" value="Cadastrar">
+                        
+                    </div>
+
+                </form>
+				
+			</article>
+            
+		</main>    
+		<footer>        
+            <nav>
+                <ul class="no-list-style background-e">
+                
+                    <li><a class="heading"></a></li>
+                    <li><a class="heading"></a></li>                                        
+                    <li></li>
+                    <li><a class="heading heading-6" href="#topo">Vitrine</a></li>
+                    
+                </ul>
+            </nav>			
+		</footer>
+		
+	</body>
+    
+</html>

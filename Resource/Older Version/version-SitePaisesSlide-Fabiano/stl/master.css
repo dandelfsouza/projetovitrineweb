@@ -1,0 +1,46 @@
+*{ /* Retira as características padrões dos Navegadores */
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, ul, li { /* Define as características em bloco das Tags Seguintes */
+
+	display: block;
+	
+}
+
+body { /* Define as características do Body */
+
+	font-family: Arial;
+
+	
+}
+
+@font-face { /* Define as caracteristicas da Fonte do Footer e Header */
+
+	
+    font-family: fontSinkinSans;
+    src: url(../fnt/SinkinSans-400Regular.otf);
+	
+}
+
+@font-face { /* Define as caracteristicas da Fonte dos Títulos Principais*/
+
+	
+    font-family: fontAlegreyaRegular;
+    src: url(../fnt/Alegreya-Regular.otf);
+	
+}
+
+body >div{ /* Define as caracteristicas da Div Centralizadora */
+	
+	width: 1349px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	
+}

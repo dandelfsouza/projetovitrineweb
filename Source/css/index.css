@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+
+body > header { 
+
+    position: relative; 
+    width: 100%; 
+    height: 100px; 
+    overflow-x: hidden; 
+    margin-bottom: -50px;
+    
+}
+ 
+
+body > header ul {
+    
+    position: fixed;
+    display: flex;
+    width: 100%;
+    box-shadow: 0px -4px 10px 5px #444;
+    z-index: 100;
+ 
+}
+
+body > header li:nth-of-type(2) { flex-grow: 1;}
+
+body > header a:hover {background-color: #0A357E; color: #FFF; transition: 0.4s}
+
+
+body > header a{ 
+
+    display: block;     
+    height: 100%; 
+    padding: 8px 25px;
+    background: #fff;
+    transition: 0.2s;
+    text-decoration: none;
+    color: #000;
+    
+}
+
+body > header li:first-of-type a { padding: 4px 25px; color: #FFF;}
+body > header a:not(.heading-6) { font-size: 1.4rem; }
+
+body > footer a { 
+
+    display: block;     
+    height: 100%; 
+    padding: 8px 25px;
+    background: #fff;
+    transition: 0.2s;
+    
+}
+body > footer li:nth-of-type(3) { flex-grow: 1;}
+body > footer li:last-of-type a { padding: 4px 25px; }
+body > footer a:not(.heading-6) { font-size: 1.4rem; }
+body > footer ul {  
+
+    display: flex; 
+    width: 100%; 
+    border-bottom: 4px solid #2D5CAD; 
+    flex-wrap: wrap;
+    
+}
+body > footer a { height: 50px; background: #000; color: #fff; text-align: center; }
+
+@media screen and (max-width: 40em) {
+    
+    body > footer li { flex-grow: 1; }
+    body > footer li:nth-of-type(3) { display: none; }
+    body > footer a.heading-6  { background: #2D5CAD; }
+	
+	body > header 
+    
+}
+
+/* --- Content Layout ------------------------------------------------------- */
+
+main > article { 
+
+    display: flex;
+    min-height: calc(100vh - 50px);
+
+    
+}
+
+.pScreen{ 
+    
+    background-image: url(../file/image/book.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 50px); 
+    
+}
+
+main > article:nth-of-type(1) > form > div, main > article:nth-of-type(1) form { display: flex; flex-direction: column; justify-content: flex-start; margin: 20px; min-width: 50%}
+
+main > article:nth-of-type(1) input{
+    
+    min-width: 50%;
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 5px #444;
+    
+    
+}
+
+input[type="submit"]{
+    
+    color: #FFF;
+}
+
+input[type="submit"]:hover{
+    
+    background-color: #0A357E;
+    transition: 0.4s;
+    color: #FFF;
+}
+
+
+main > article:nth-of-type(1) { justify-content: center; align-items: center; }
+main > article:nth-of-type(1) span { text-align: center; }
+
+main > article:nth-of-type(2) { position: relative; }
+main > article:nth-of-type(2) input { position: absolute; bottom: 50px; }
+main > article:nth-of-type(2) input:nth-of-type(1) { right: 55%; }
+main > article:nth-of-type(2) input:nth-of-type(2) { right: 52.5%; }
+main > article:nth-of-type(2) input:nth-of-type(3) { right: 50%; }
+main > article:nth-of-type(2) input:nth-of-type(4) { right: 47.5%; }
+main > article:nth-of-type(2) input:nth-of-type(5) { right: 45%; }
+
+.slideshow { 
+
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+.slideshow > div { flex: 0 0 100vw; transition: 0.8s; }
+#button-1:checked ~ .slideshow > div:first-of-type { margin-left: 0 }
+#button-2:checked ~ .slideshow > div:first-of-type { margin-left: -100vw }
+#button-3:checked ~ .slideshow > div:first-of-type { margin-left: -200vw }
+#button-4:checked ~ .slideshow > div:first-of-type { margin-left: -300vw }
+#button-5:checked ~ .slideshow > div:first-of-type { margin-left: -400vw }
+.slideshow > div h2 { width: 100%; text-align: center; }
+
+textarea {
+    
+    height: 200px;
+    
+}
+
+main > article:nth-of-type(n+3) div:nth-of-type(1) { flex: 1 1 72.5%; }
+main > article:nth-of-type(n+3) div:nth-of-type(2) { flex: 0 1 2.5%; }
+main > article:nth-of-type(n+3) div:nth-of-type(3) { flex: 0 0 350px; }
+
+main > article:nth-of-type(4) { flex-direction: row-reverse; }
+
+@media screen and (max-width: 55em) {
+
+	/* Note - flex-grow flex-shrink e flex-basis */
+    
+    main > article:nth-of-type(n+3) div:nth-of-type(3) { flex: 1 1 0%; } 
+    main > article:nth-of-type(n+3) { flex-wrap: wrap; }
+    main > article, 
+    main > article:nth-of-type(4) { border-width: 0px 0px 15px 0px; } /* Check */
+
+    
+    @media screen and (max-width: 30em) {
+        
+        .padding-a { padding: 15px; }
+        
+    }
+
+}  
+
+
+/* The popup form - hidden by default */
+
+.form-popup {
+    
+  display: none;
+  position: fixed;
+  right: 0px;
+    
+}
+
+/* Add styles to the form container */
+
+.form-container {
+    
+  max-width: 300px;
+  padding: 10px;
+  background-color: #DDD;
+    
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+    
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  background: #FFF;
+font-size: 24px;
+    
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  
+  outline: none;
+    
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    
+    padding-left: 5px;
+    background-color: #2D5CAD;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    opacity: 0.8;
+    font-size: 24px;
+}
+
+.form-container .btn-cancel {
+    
+    padding-left: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    opacity: 0.8;
+    font-size: 24px;
+}
+
+/* Add a red background color to the cancel button */
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover {
+  background-color: #0A357E;
+    transition: 0.4s;
+}
+
+.form-container .btn-cancel:hover{
+    
+    background-color: darkred;
+    transition: 0.4s;
+    
+}
+
+.login:hover{
+    
+    color: #FFF;
+    
+}

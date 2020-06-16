@@ -1,0 +1,84 @@
+footer{ /* Define o tamanho do Footer */
+	
+	width: 100%;
+	background-color: #000;
+	position: relative;
+	float: left;
+	z-index: 1000;	
+	border-top: 2px solid #fca311;
+	font-family: fontSinkinSans;
+	
+}
+
+footer hr{ /* Define as propriedades da Linha Verde */
+	
+	float: left;
+    border: 0;
+	width: 100%;
+    background-color: #9A79EA;
+	margin-top: 20px;
+	
+}
+
+footer div{ /* Define as características da Div Centralizadora */
+	
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 1349px;
+	min-height: 1px;
+	
+}
+
+footer li{ /* Define as características dos Textos */
+	
+	float: left;
+	background-color: #14213d;
+	text-align: center;
+    width: 125px;
+    padding-top: 15px;
+	padding-bottom: 15px;
+    cursor: pointer;
+	
+	
+}
+
+footer a{ /* Define as características dos Links */
+	
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	
+}
+
+footer li:hover{ /* Define a característica da Cor do Link */
+
+	background-color: #fca311;
+	transition: 0.8s;
+	
+}
+
+footer li >div{ /* Define as caracteristicas da Div de Rolagem */
+    
+    width: 21px;
+    height: 21px;
+	color: #fff;
+	
+   
+}
+
+footer li:last-child { /* Define as caracteristicas da Div de Rolagem */
+    
+    width: 60px;
+    height: 25px;
+	float: right;
+	background-color: #14213d;
+    
+    
+}
+
+footer li:last-child:hover{
+	
+	background-color: #fca311;
+	transition: 0.8s;
+}
